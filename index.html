@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Receipt</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+
+        .receipts-main-container {
+            width: 80%;
+            box-shadow: 0 0 10px gray;
+            padding: 10px;
+            background-color: #fff;
+            display: block;
+            margin: 30px auto;
+            position: relative;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .border-bottom {
+            border-bottom: 1px solid gray;
+        }
+
+        .img-logo {
+            margin: 0px auto;
+            display: block;
+        }
+
+        .address {
+            text-align: end;
+        }
+
+        .receipt-document {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .dotted-container {
+            border-bottom: 2px dotted gray;
+            width: 200px;
+            padding-right: 200px;
+        }
+
+        .without-dotted {
+            color: rgb(151, 145, 145);
+            padding-left: 200px;
+            text-align: end;
+        }
+
+        .text {
+            text-align: start;
+        }
+
+        .signature-container {
+            text-align: end;
+            margin: 10px 20px;
+        }
+
+        .img-stamp {
+            position: absolute;
+            right: -100px;
+            bottom: 150px;
+        }
+
+        .footer-container {
+            margin-top: 50px;
+            background-color: gray;
+            color: #fff;
+            margin-bottom: -10px;
+            padding: 30px;
+            margin-left: -10px !important;
+            margin-right: -10px !important;
+        }
+
+        .margin {
+            margin-bottom: 0px;
+        }
+
+        .font-wait {
+            font-weight: 400;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="receipts-main-container ">
+        <div class="border-bottom">
+            <img src="toyota-img.jpg" class="img-logo" />
+            <h1 class="text-center">TOYOTA</h1>
+            <p class="address">301 ,Abouve ghule nagar<br /> shewalewadi hadapsar<br /> pune -412107 +91 8788886543</p>
+        </div>
+
+        <div>
+            <h1 class="text-center font-wait">Payment Receipt</h1>
+            <div class="receipt-document">
+                <p class="without-dotted"> Receipt No :</p>
+                <div class="text">
+                    <p class="dotted-container">1234567890</p>
+                </div>
+            </div>
+            <div class="receipt-document">
+                <p class="without-dotted"> Payment Date :</p>
+                <div class="text">
+                    <p class="dotted-container">1 jan 2024</p>
+                </div>
+            </div>
+            <div class="receipt-document">
+                <p class="without-dotted"> Amount : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </p>
+                <div class="text">
+                    <p class="dotted-container">99999 /-</p>
+                </div>
+            </div>
+            <div class="receipt-document">
+                <p class="without-dotted"> Payment Mode :</p>
+                <div class="text">
+                    <p class="dotted-container">UPI</p>
+                </div>
+            </div>
+            <br /><br /><br /><br /><br /><br /><br /><br /><br />
+        </div>
+
+        <div class="border-bottom margin">
+            <img src="stamp.png" class="img-stamp" />
+            <p class="signature-container">SIGNATURE Of TOYOTA</p>
+        </div>
+
+        <div class="footer-container">
+            <h1 class="text-center font-wait">Thank you for your payment</h1>
+        </div>
+    </div>
+</body>
+
+</html>
